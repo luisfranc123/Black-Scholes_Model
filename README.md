@@ -68,4 +68,3 @@ $$\rho_{call}(per\space{1\%}\space{rate}) = -Kte^{-rt}N(-d_2)\cdot0.01$$
 
 ####**6. Scenarios Visualization**
 ---
-
