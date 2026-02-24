@@ -5,7 +5,7 @@ The present project aims to calculate option estimates employing the Black-Schol
 
 *It is important to notice that both rates and volatility are annualized*.
 
-####**1. Define Constants**
+####**1. Define Initial Parameters**
 ---
 
 In this section, we define the initial parameters that the model is going to work with.
