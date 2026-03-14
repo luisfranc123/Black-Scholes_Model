@@ -46,22 +46,21 @@ Key Black-Scholes Greeks and Their Functions:
 - Theta ($\theta$): Measures the rate of time decay, showing how much value the option loses daily as it approaches expiration.
 
 - Rho ($\rho$): Measures sensitivity to the risk-free interest rate, indicating the change in option price for a change in interest rates.
+$$\Delta_{\text{call}} = e^{-qt}N(d_1)$$
 
-$$\Delta_{call} = e^{-qt}N(d_1)$$
-\
-$$\Delta_{put} = e^{-qt}N(d_1) - e^{-qt}$$
-\
+$$\Delta_{\text{put}} = e^{-qt}N(d_1) - e^{-qt}$$
+
 $$\Gamma = \frac{e^{-qt}\phi(d_1)}{S\sigma\sqrt{t}}$$
-\
-$$\nu_{1\%} = e^{-qt}\phi(d_1)\sqrt{t}\space0.01$$
-\
-$$\Theta_{call_{year}} = \frac{-Se^{-qt}\phi(d_1)\sigma}{2\sqrt{t}} -   rKe^{-rt}N(d_2) + qSe^{-qt}N(d_1)$$
-\
-$$\Theta_{put_{year}} = \frac{-Se^{-qt}\phi(d_1)\sigma}{2\sqrt{t}} +   rKe^{-rt}N(-d_2) - qSe^{-qt}N(-d_1)$$
-\
-$$\rho_{call}(per\space{1\%}\space{rate}) = Kte^{-rt}N(d_2)\cdot0.01$$
-\
-$$\rho_{call}(per\space{1\%}\space{rate}) = -Kte^{-rt}N(-d_2)\cdot0.01$$
+
+$$\nu_{1\%} = e^{-qt}\phi(d_1)\sqrt{t} \cdot 0.01$$
+
+$$\Theta_{\text{call, year}} = \frac{-Se^{-qt}\phi(d_1)\sigma}{2\sqrt{t}} - rKe^{-rt}N(d_2) + qSe^{-qt}N(d_1)$$
+
+$$\Theta_{\text{put, year}} = \frac{-Se^{-qt}\phi(d_1)\sigma}{2\sqrt{t}} + rKe^{-rt}N(-d_2) - qSe^{-qt}N(-d_1)$$
+
+$$\rho_{\text{call}}\,(per\ 1\%\ rate) = Kte^{-rt}N(d_2) \cdot 0.01$$
+
+$$\rho_{\text{put}}\,(per\ 1\%\ rate) = -Kte^{-rt}N(-d_2) \cdot 0.01$$
 
 #### **5. Scenarios (with dividend yield)**
 ---
