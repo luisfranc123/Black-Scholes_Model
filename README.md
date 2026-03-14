@@ -46,6 +46,7 @@ Key Black-Scholes Greeks and Their Functions:
 - Theta ($\theta$): Measures the rate of time decay, showing how much value the option loses daily as it approaches expiration.
 
 - Rho ($\rho$): Measures sensitivity to the risk-free interest rate, indicating the change in option price for a change in interest rates.
+  
 $$\Delta_{\text{call}} = e^{-qt}N(d_1)$$
 
 $$\Delta_{\text{put}} = e^{-qt}N(d_1) - e^{-qt}$$
