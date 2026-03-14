@@ -1,11 +1,11 @@
-##**Tail Risk Black-Scholes Option Estimates**
+## **Tail Risk Black-Scholes Option Estimates**
 ---
 
 The present project aims to calculate option estimates employing the Black-Scholes model to illustrate different scenarios relying on volatility, time of expiry, dividend yield percentage, and percentage basis change.
 
 *It is important to notice that both rates and volatility are annualized*.
 
-####**1. Define Initial Parameters**
+#### **1. Define Initial Parameters**
 ---
 
 In this section, we define the initial parameters that the model is going to work with.
@@ -18,21 +18,21 @@ In this section, we define the initial parameters that the model is going to wor
 - Time to expiry T (years) -- vector of multiple values
 
 
-####**2. Calculate intermediates $d_1$ and $d_2$**
+#### **2. Calculate intermediates $d_1$ and $d_2$**
 ---
 
 $$d_1 = \frac{ln(\frac{S}{K}) + ((r-q) + \frac{\sigma^2}{2})T}{\sigma\sqrt{T}}$$
 \
 $$d_2 = d_1 - \sigma\sqrt{T}$$
 
-####**3. Calculate Outputs (Call Price and Put Price)**
+#### **3. Calculate Outputs (Call Price and Put Price)**
 ---
 
 $$C_{call} = Se^{-qT}N(d_1) - Ke^{-rT}N(d_2)$$
 \
 $$P_{put} = Ke^{-rT}N(-d_2) - Se^{-qT}N(-d_1)$$
 
-####**4. Calculate Extras (Greeks)**
+#### **4. Calculate Extras (Greeks)**
 ---
 
 Key Black-Scholes Greeks and Their Functions:
@@ -63,8 +63,8 @@ $$\rho_{call}(per\space{1\%}\space{rate}) = Kte^{-rt}N(d_2)\cdot0.01$$
 \
 $$\rho_{call}(per\space{1\%}\space{rate}) = -Kte^{-rt}N(-d_2)\cdot0.01$$
 
-####**5. Scenarios (with dividend yield)**
+#### **5. Scenarios (with dividend yield)**
 ---
 
-####**6. Scenarios Visualization**
+#### **6. Scenarios Visualization**
 ---
